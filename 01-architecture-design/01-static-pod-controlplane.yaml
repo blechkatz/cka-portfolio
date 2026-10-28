@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: static-web-controlplane
+  namespace: kube-system
+  labels:
+    tier: control-plane
+    component: static-web
+spec:
+  containers:
+  - name: web
+    image: nginx:1.25-alpine
+    ports:
+    - containerPort: 80
+      protocol: TCP
+    resources:
+      limits:
+        cpu: "100m"
+        memory: "64Mi"
+      requests:
+        cpu: "50m"
+        memory: "32Mi"
