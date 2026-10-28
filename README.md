@@ -4,7 +4,7 @@ Dieses Repository dokumentiert meine praktische Vorbereitung auf die **Certified
 
 Es enthält praxisnahe Kubernetes-Manifeste, Cluster-Konfigurationen und ausführliche Troubleshooting-Logbücher aus realen Lab-Szenarien.
 
-## 🛠 Repository-Struktur & Themen
+## Repository-Struktur & Themen
 
 - **`01-architecture-design/`**: Cluster-Architektur, Control Plane Komponenten, Static Pods und etcd Backup/Restore.
 - **`02-workloads-services/`**: Multi-Container Pods, Deployments, Services (ClusterIP, NodePort) und Ingress-Controller.
@@ -12,7 +12,7 @@ Es enthält praxisnahe Kubernetes-Manifeste, Cluster-Konfigurationen und ausfüh
 - **`04-troubleshooting/`**: Analyse und Behebung von Fehlern auf Application-, Control Plane- und Worker Node-Ebene.
 - **`05-security/`**: Role-Based Access Control (RBAC), ServiceAccounts und SecurityContexts.
 
-## 🔍 Fokus: Troubleshooting & Lab-Praxis
+## Fokus: Troubleshooting & Lab-Praxis
 
 Ein zentraler Bestandteil meiner Vorbereitung war das gezielte Beheben von Cluster-Fehlern. Im Ordner `04-troubleshooting/` finden sich detaillierte Post-Mortem-Analysen zu Themen wie:
 - `CrashLoopBackOff` & Pod-Diagnose via `kubectl logs` / `describe`
